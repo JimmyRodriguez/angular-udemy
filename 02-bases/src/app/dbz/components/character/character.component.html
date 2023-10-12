@@ -1,0 +1,23 @@
+<h4>Agregar Personajes</h4>
+<form class="row" (ngSubmit)="emitCharacter()">
+  <input
+    type="text"
+    [(ngModel)]="character.name"
+    [ngModelOptions]="{standalone: true}"
+    class="form-control "
+    placeholder="Nombre"
+  >
+
+  <input
+    type="number"
+    [(ngModel)]="character.power"
+    [ngModelOptions]="{standalone: true}"
+    class="form-control mt-2"
+    placeholder="Poder"
+  >
+
+  <button type="submit" class="btn btn-primary mt-2" >Agregar</button>
+
+  <!-- <pre>{{ character | json }}</pre> -->
+
+</form>
